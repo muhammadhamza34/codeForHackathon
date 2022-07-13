@@ -112,7 +112,7 @@ const Dahboard = (props) => {
             return (
               <Grid key={val?.id} item xs={12} sm={6} md={4} >
                 <Box p={2} style={{ boxShadow: '0 0.5rem 1rem rgb(0 0 0 / 15%)' }} >
-                  <img style={{ width: '100%' }} src={val?.data?.image} />
+                  <img style={{ width: '100%',height:'200px' }} src={val?.data?.image} />
                   <Typography style={{ margin: '10px 0px' }} variant="h6" >Hotel Name : {val?.data?.hotelName}</Typography>
                   <Typography style={{ margin: '10px 0px' }} variant="h6" >No of Rooms : {val?.data?.noOfRooms}</Typography>
                   <Typography style={{ margin: '10px 0px' }} variant="h6" >Per Day Price : {val?.data?.perDayPrice}</Typography>
@@ -183,7 +183,7 @@ const Dahboard = (props) => {
               <OutlinedInput required style={{ borderRadius: "10px", height: "45px", marginTop: "5px" }} placeholder="9999999999." fullWidth
               />
             </Box>
-            <FormControlLabel value="cod" checked={true} value={true} control={<Radio />} label="Cash on CheckIn" />
+            <FormControlLabel value="cod" checked={true}  control={<Radio />} label="Cash on CheckIn" />
             {/* <Typography style={{ marginTop: '20px', textAlign: 'end' }} > Total Ammount : <span style={{ color: '#FF0000' }} > adad </span> </Typography> */}
             <div style={{ display: 'flex', justifyContent: 'flex-end' }} >
               <Button type="submit" className={classes.placeOrderBtn} onClick={(e) => BookNow(e)}  >Book Now </Button>

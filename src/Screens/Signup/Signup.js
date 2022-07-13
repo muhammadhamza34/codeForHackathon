@@ -152,11 +152,11 @@ const Signup = (props) => {
                     <form className={classes.widthSetter} >
                         <Box my={3} className={classes.widthSetter}  >
                             <Typography className={classes.inputLabel} >First name </Typography>
-                            <OutlinedInput required fullWidth className={classes.inputField} value={name} onChange={(e) => setName(e.target.value)} placeholder="Ibad" />
+                            <OutlinedInput required fullWidth className={classes.inputField} value={name} onChange={(e) => setName(e.target.value)} placeholder="HAMZA" />
                         </Box>
                         <Box my={3} className={classes.widthSetter}  >
                             <Typography className={classes.inputLabel} >Email Address </Typography>
-                            <OutlinedInput type="email" required fullWidth className={classes.inputField} value={email} onChange={(e) => setemail(e.target.value)} placeholder="mibad0338@gmail.com" />
+                            <OutlinedInput type="email" required fullWidth className={classes.inputField} value={email} onChange={(e) => setemail(e.target.value)} placeholder="muhammadhamza514@gmail.com" />
                         </Box>
                         <Box my={3} className={classes.widthSetter}  >
                             <Typography className={classes.inputLabel} >Password </Typography>

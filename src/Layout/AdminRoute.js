@@ -9,7 +9,7 @@ export const AdminRoute = ({ component: Component,currentUser, ...rest }) => {
 // currentUser && Object.keys(currentUser).length !=0
 
     if (localStorage.getItem('uid') ) {
-        if(localStorage.getItem('uid')=='grxJsr7Ep6TbwD0VDjfJPBGVBmd2' || currentUser?.isAdmin )
+        if(localStorage.getItem('uid')=='qJXMmOTgVtYyxetsjL1IgU9H1Tr1' || currentUser?.isAdmin )
         {
             return (
                 <Component {...rest} />
