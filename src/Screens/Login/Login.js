@@ -133,7 +133,7 @@ const Login = (props) => {
                     <form className={classes.widthSetter} >
                         <Box my={3} className={classes.widthSetter}  >
                             <Typography className={classes.inputLabel} >Email Address </Typography>
-                            <OutlinedInput type="email" required fullWidth className={classes.inputField} value={email} onChange={(e) => setemail(e.target.value)} placeholder="mibad0338@gmail.com" />
+                            <OutlinedInput type="email" required fullWidth className={classes.inputField} value={email} onChange={(e) => setemail(e.target.value)} placeholder="muhammadhamza514@gmail.com" />
                         </Box>
                         <Box my={3} className={classes.widthSetter}  >
                             <Typography className={classes.inputLabel} >Password </Typography>
