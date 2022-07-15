@@ -101,7 +101,7 @@ const Dahboard = (props) => {
               userLogout()
               localStorage.removeItem('uid')
             }} >Logout</Button> : <Button onClick={() => navigate('/login')} style={{ backgroundColor: "black", color: 'white',marginLeft:'auto' }} >Login </Button>}
-            {currentUser?.isAdmin && <Button onClick={() => navigate('/admin')} variant='contained' style={{marginLeft:'5px'}} >Go to Admin Panel</Button> }
+            {localStorage.getItem('uid')=='qJXMmOTgVtYyxetsjL1IgU9H1Tr1' ? <Button onClick={() => navigate('/admin')} variant='contained' style={{marginLeft:'5px'}} >Go to Admin Panel</Button> :null }
             { currentUser && <IconButton onClick={() => navigate('/details')} style={{marginTop:'-10px'}} > <Avatar  sx={{ bgcolor: deepPurple[500] }}>{getFirstAlphabet(currentUser?.name)}</Avatar></IconButton> }
           </div>
         </Grid>
